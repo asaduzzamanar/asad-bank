@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="login-area">
+        <div class="bank-title">
+            <h1>Welcome to Asad Bank</h1>
+        </div>
+        <div class="login-area">
+
+            <h2>Login</h2>
+            <input type="email" name="ab" placeholder="Enter Your E-mail" class="text-box" id="" required>
+            <input type="password" name="ab" placeholder="Enter Your Password" class="text-box" id="" required>
+            <input type="submit" id="login-btn" name="ab" class="btn" value="Login">
+
+        </div>
+        
+    </section>
+
+    <section id="transaction-area">
+        <div class="trans-card">
+
+            <div class="bank-name"><h1>Asad Bank</h1></div>
+            
+            <div class="cards">
+
+                <div class="deposit status">
+ 
+                    <h2>Deposit</h2>
+                    <h1>$ <span id="current-deposit">00</span></h1>
+
+                </div>
+                <div class="withdraw status">
+
+                    <h2>Withdraw</h2>
+                    <h1>$ <span id="current-withdraw">00</span></h1>
+                    
+                </div>
+                <div class="balance status">
+ 
+                    <h2>Balance</h2>
+                    <h1>$ <span id="currnet-balance">1280</span></h1>
+
+                </div>
+            </div>
+        </div>
+       
+        <div class="trans-card">
+            <div class="card">
+                <div class="deposit status">
+                    <div>
+                        <h1>Deposit</h1>
+                        <input   type="text" name="" placeholder="$ Deposit Amount" class="text-box" id="deposit-amount">
+                        <input type="button" id="deposit-btn" class="dp-btn" value="Deposit">
+                    </div>
+                </div>
+                <div class="withdraw status">
+                    <div>
+                        <h1>Withdraw</h1>
+                        <input type="text" name="" placeholder="$ Withdraw Amount" class="text-box" id="withdraw-amount">
+                        <input type="button" id="withdraw-btn" class="dp-btn" value="Withdraw">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

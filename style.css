@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.bank-title{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(235, 0, 118, 0.493);
+    padding-bottom: 50px;
+    font-weight: 500;
+}
+
+.login-area{
+    width: 50%;
+    height: 150px;
+    margin: auto;
+    background: rgba(235, 0, 118, 0.493);
+    border-radius: 10px;
+    padding: 50px 50px;
+    box-shadow: 10px 10px 30px rgb(172, 171, 171);
+}
+
+.login-area h2{
+    color: aqua;
+}
+.text-box{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid wheat;
+}
+
+.text-box:hover{
+    border-bottom: 1px solid aqua;
+}
+
+.btn{
+   padding: 8px 18px;
+   margin: 5px 0;
+   background: aqua;
+   outline: none;
+   border-radius: 7px;
+   border: none;
+   color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: none;
+    border: 1px solid aqua;
+    color: aqua;
+}
+
+#transaction-area{
+    display: none;
+}
+
+.bank-name{
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: white;
+    background: rgb(218, 76, 10);
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-family: sans-serif;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+.deposit{
+    background: rgb(218, 76, 10);
+}
+.withdraw{
+    background: rgb(10, 176, 218);
+}
+.balance{
+    background: rgb(10, 218, 138);
+}
+
+.status{
+    padding: 2rem;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 10px 10px 40px rgb(110, 109, 109);
+}
+
+.status h1{
+    font-size: 30px;
+}
+.status h2{
+    font-size: 20px;
+}
+
+
+.trans-card{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+.dp-btn{
+    padding: 8px 18px;
+    margin: 5px 0;
+    background: aqua;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid aqua;
+    color: white;
+}
+
+.dp-btn:hover{
+    cursor: pointer;
+    background: none;
+    color: aqua;
+}
+
+
+
+@media only screen and (max-width: 700px)  {
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+        margin-bottom: 50px;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3rem;
+        margin-bottom: 25px;
+    }
+
+}
+@media only screen and (max-width: 500px)  {
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3rem;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3rem;
+    }
+
+}
